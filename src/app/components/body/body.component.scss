@@ -1,3 +1,5 @@
+@import "../../../assets/variables.scss";
+
 :host {
     display: block;
 }
@@ -5,15 +7,33 @@
 .body-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: sticky;
+    top: 0;
+    padding: 16px 48px;
+    background-color: $secondary;
+    color: $text-secondary;
+
+    &-container {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     &--logo {
-        font-size: 16px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 2px;
         display: inline-block;
     }
 
     &--menu {
         display: inline-block;
+        font-size: 1.1rem;
+
+        &-item {
+            margin-left: 32px;
+        }
     }
 }
