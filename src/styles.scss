@@ -1,12 +1,8 @@
-@import "./assets/variables.scss";
-
 body {
     height: 100%;
     font-size: 14px;
     margin: 0;
-    font-family: 'Raleway', Verdana, sans-serif;
-    background-color: $primary;
-    color: $text-primary;
+    font-family: 'Montserrat', Verdana, sans-serif;
 }
 
 .flex-row {
@@ -22,4 +18,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cursive {
+    font-family: 'Dancing Script', cursive;
+    font-size: 26px;
 }

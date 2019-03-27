@@ -1,22 +1,19 @@
-import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
-import { goMovie, initCanvasFile } from '../../utility/custom-canvas';
+import { Component, OnInit } from '@angular/core';
+
+declare let particlesJS: any;
 
 @Component({
     selector: 'ml-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements OnInit {
 
-    constructor(private elRef: ElementRef) {
+    constructor() {
     }
 
     ngOnInit() {
-    }
-
-    ngAfterViewInit() {
-        initCanvasFile(this.elRef.nativeElement.querySelector('#main-canvas'));
-        goMovie();
+        particlesJS.load('particles-js', 'assets/particles-snow.json');
     }
 
 }
