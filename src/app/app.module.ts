@@ -4,17 +4,30 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
+import { AboutComponent } from './components/about/about.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { CareerComponent } from './components/career/career.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    BodyComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        BodyComponent,
+        AboutComponent,
+        SkillsComponent,
+        CareerComponent,
+        ProjectsComponent,
+        ContactComponent
+    ],
+    imports: [
+        BrowserModule,
+        CommonModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

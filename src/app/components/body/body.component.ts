@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ml-body',
-  templateUrl: './body.component.html',
-  styleUrls: ['./body.component.scss']
+    selector: 'ml-body',
+    templateUrl: './body.component.html',
+    styleUrls: ['./body.component.scss']
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+    constructor(private elRef: ElementRef) {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    scrollToElement(element): void {
+        this.elRef.nativeElement.querySelector('#' + element.id).scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+        setTimeout(() => {
+            window.location.hash = element.id;
+        }, 1000);
+    }
 
 }

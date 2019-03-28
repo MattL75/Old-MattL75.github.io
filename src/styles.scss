@@ -24,3 +24,44 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 26px;
 }
+
+.content-section {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &--box-light {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin: 12px;
+        padding: 24px;
+        border: 1.5px solid #d3d3d3;
+        border-radius: 4px;
+        background-color: var(--info-box-light);
+    }
+
+    &-text {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+}
+
+.primary-title {
+    font-size: 2rem;
+}
+
+.secondary-title {
+    display: inline-flex;
+    font-size: 1.3rem;
+
+    i {
+        margin-right: 16px;
+    }
+}

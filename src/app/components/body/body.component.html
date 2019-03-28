@@ -1,30 +1,36 @@
 <nav class="body-nav">
     <div class="body-nav-container">
-        <div class="body-nav--logo">
+        <div class="body-nav--logo cursive">
             Matt
-            <span class="body-nav--logo-last cursive">LAJOIE</span>
+            <span class="body-nav--logo-last">Lajoie</span>
         </div>
         <div class="body-nav--menu">
             <span class="body-nav--menu-item">
-                About
+                <a (click)="scrollToElement(about)">About</a>
                 <span class="hover-effect"></span>
             </span>
             <span class="body-nav--menu-item">
-                Skills
+                <a (click)="scrollToElement(skills)">Skills</a>
                 <span class="hover-effect"></span>
             </span>
             <span class="body-nav--menu-item">
-                Career
+                <a (click)="scrollToElement(career)">Career</a>
                 <span class="hover-effect"></span>
             </span>
             <span class="body-nav--menu-item">
-                Projects
+                <a (click)="scrollToElement(projects)">Projects</a>
                 <span class="hover-effect"></span>
             </span>
             <span class="body-nav--menu-item">
-                Contact
+                <a (click)="scrollToElement(contact)">Contact</a>
                 <span class="hover-effect"></span>
             </span>
         </div>
     </div>
 </nav>
+
+<ml-about id="About" #about></ml-about>
+<ml-skills id="Skills" #skills></ml-skills>
+<ml-career id="Career" #career></ml-career>
+<ml-projects id="Projects" #projects></ml-projects>
+<ml-contact id="Contact" #contact></ml-contact>

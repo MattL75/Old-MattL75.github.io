@@ -7,12 +7,16 @@
     --primary: black;
     --primary-light: #363636;
     --secondary: #FFFFFF;
-    --accent: #226089;
-    --accent-light: #0075F6;
+    --accent: #0075F6;
+    --accent-dark: #226089;
     --neutral: #4592AF;
 
     --text-primary: white;
-    --text-secondary: #363636;
+    --text-secondary: black;
+    --text-secondary-light: #363636;
+
+    --info-box-light: #e5e4e2;
+    --info-box-dark: #454545;
 
     background-color: var(--primary);
     color: var(--text-primary);
