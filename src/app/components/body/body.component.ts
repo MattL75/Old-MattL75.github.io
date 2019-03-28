@@ -15,9 +15,9 @@ export class BodyComponent implements OnInit {
 
     scrollToElement(element): void {
         this.elRef.nativeElement.querySelector('#' + element.id).scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
-        setTimeout(() => {
-            window.location.hash = element.id;
-        }, 1000);
     }
 
+    scrollToTop(): void {
+        document.body.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+    }
 }
