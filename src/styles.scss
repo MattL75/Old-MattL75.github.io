@@ -14,10 +14,18 @@ body {
     flex-direction: column;
 }
 
+.flex-grow {
+    flex-grow: 1;
+}
+
 .flex-align-centre {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .cursive {
@@ -32,34 +40,16 @@ body {
     align-items: center;
 }
 
-.info-section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    &--box-light {
-        flex-grow: 1;
-        flex-basis: 0;
-        margin: 12px;
-        padding: 24px;
-        border-radius: 4px;
-    }
-
-    &-text {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-}
-
 .primary-title {
+    margin-top: 1.3em;
     font-size: 2rem;
 }
 
 .secondary-title {
-    display: inline-flex;
+    display: flex;
     font-size: 1.3rem;
-
-    i {
-        margin-right: 16px;
-    }
+    margin-bottom: 8px;
+    margin-top: 0;
+    padding-bottom: 4px;
+    border-bottom: 3px solid var(--accent);
 }
