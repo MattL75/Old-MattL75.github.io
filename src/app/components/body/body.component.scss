@@ -14,9 +14,6 @@
     color: var(--text-primary);
     box-sizing: border-box;
 
-    // BOX SHADOW -- MAYBE
-    // box-shadow: 1px 0 10px 0 whitesmoke;
-
     &-container {
         width: 75%;
         display: flex;
@@ -29,9 +26,15 @@
         letter-spacing: 2px;
         font-size: 36px;
         cursor: pointer;
+        transition: all 250ms ease-in-out;
+        user-select: none;
 
         &-last {
             color: var(--accent);
+        }
+
+        &:hover {
+            transform: scale3d(1.2, 1.2, 1.2);
         }
     }
 
