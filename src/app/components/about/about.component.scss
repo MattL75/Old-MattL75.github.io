@@ -2,8 +2,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 24px;
     background-color: var(--secondary);
     color: var(--text-secondary);
+    z-index: 100;
+
+    &::before {
+        background: url(../../../assets/wave.svg) center top/1440px 80px
+            repeat-x;
+        bottom: -80px;
+        content: "";
+        display: block;
+        height: 80px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
 }
 
 .info-section {

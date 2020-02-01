@@ -3,18 +3,9 @@
     height: 100%;
     overflow: auto;
 
-    // Global Variables
-    --primary: black;
-    --primary-light: #363636;
-    --secondary: #FFFFFF;
-    --accent: #0075F6;
-    --accent-dark: #226089;
-    --neutral: #4592AF;
-
-    --text-primary: white;
-    --text-secondary: black;
-    --text-secondary-light: #363636;
-
     background-color: var(--primary);
     color: var(--text-primary);
 }
+
+// CSS PROPERTIES NEED TO GO ON ROOT OR HTML TAG
+// THEN MODIFY THESE DYNAMICALLY USING A SERVICE OR A FUNCTION

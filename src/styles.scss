@@ -1,8 +1,23 @@
+:root {
+    // Global Variables
+    --primary: black;
+    --primary-light: #363636;
+    --secondary-dark: #e6e6e6;
+    --secondary: #ffffff;
+    --accent: #0075f6;
+    --accent-dark: #226089;
+    --neutral: #4592af;
+
+    --text-primary: white;
+    --text-secondary: black;
+    --text-secondary-light: #363636;
+}
+
 body {
     height: 100%;
     font-size: 14px;
     margin: 0;
-    font-family: 'Montserrat', Verdana, sans-serif;
+    font-family: "Montserrat", Verdana, sans-serif;
 }
 
 .flex-row {
@@ -29,7 +44,7 @@ body {
 }
 
 .cursive {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     font-size: 26px;
 }
 
