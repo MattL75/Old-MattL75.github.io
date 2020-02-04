@@ -46,10 +46,12 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.scss"
+                            "src/styles.scss",
+                            "node_modules/flickity/dist/flickity.css"
                         ],
                         "scripts": [
-                            "node_modules/particles.js/particles.js"
+                            "node_modules/particles.js/particles.js",
+                            "node_modules/flickity/dist/flickity.pkgd.min.js"
                         ],
                         "es5BrowserSupport": true
                     },

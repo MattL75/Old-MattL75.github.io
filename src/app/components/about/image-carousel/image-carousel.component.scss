@@ -1,0 +1,16 @@
+:host {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 48px;
+    margin-top: 16px;
+
+    // TODO: Maybe this? Feels like carousel needs to standout a bit more...
+    // box-shadow: 0 6px 10px grey;
+}
+
+@media only screen and (min-width: 992px) {
+    .carousel-cell {
+        margin: 0 12px;
+    }
+}

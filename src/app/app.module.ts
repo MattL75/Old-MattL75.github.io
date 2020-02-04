@@ -10,6 +10,7 @@ import { CareerComponent } from './components/career/career.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CommonModule } from '@angular/common';
+import { ImageCarouselComponent } from './components/about/image-carousel/image-carousel.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { CommonModule } from '@angular/common';
         SkillsComponent,
         CareerComponent,
         ProjectsComponent,
-        ContactComponent
+        ContactComponent,
+        ImageCarouselComponent
     ],
     imports: [
         BrowserModule,
