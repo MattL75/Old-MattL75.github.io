@@ -2,11 +2,13 @@
     display: block;
     width: 100%;
     max-width: 800px;
-    padding-bottom: 48px;
-    margin-top: 16px;
+    padding-bottom: 42px;
+    margin-bottom: 24px;
+    margin-top: 24px;
 
     // TODO: Maybe this? Feels like carousel needs to standout a bit more...
     // box-shadow: 0 6px 10px grey;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 @media only screen and (min-width: 992px) {
